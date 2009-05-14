@@ -25,11 +25,11 @@ class CommentsControllerTest < ActionController::TestCase
 
     context "with some comment" do
       setup do
-        Factory(:comment,:body => "My created comment")
+        @comment = Factory(:comment,:body => "My created comment")
         get :index
       end
       should "display comment" do
-        assert_select("p","My created comment")
+        assert_select("p#comment#{@comment.id}","My created comment")
       end
     end
 
@@ -50,7 +50,6 @@ class CommentsControllerTest < ActionController::TestCase
         should "display a factice post" do
           assert_select('div#post',/factice/)
         end
-      #In both case
         should "display a form" do
           assert_select("div.newComment form")
       end
@@ -76,6 +75,7 @@ class CommentsControllerTest < ActionController::TestCase
     end
   end
 
+#Testing the comment creation
   context "handle :create" do
     context "by html" do
         setup do
@@ -103,6 +103,57 @@ class CommentsControllerTest < ActionController::TestCase
           end
 
       end
+  end
+
+#Testing the comment update
+  context "handle :update" do
+
+    context "by html" do
+      setup do
+        @comment = Factory(:comment,:body => "my comment",:score => 0)
+        put :update,:id => @comment.id, :comment => @comment
+      end
+      should_respond_with :redirect
+      should_redirect_to("comments index") {comments_path}
+      should_assign_to :comment
+      should "update the score by 1" do
+        assert_equal(1, assigns(:comment).score)
+      end
+    end
+
+    context "by xhr" do
+      setup do
+        @comment = Factory(:comment,:body => "my comment",:score => 0)
+        xhr :put,:update,:id => @comment.id, :comment => @comment
+      end
+      should_respond_with :success
+      should_assign_to :comment
+      should "update the score by 1" do
+        assert_equal(1, assigns(:comment).score)
+      end
+      should "update the right comment" do
+        assert_match(%($('#comment#{@comment.id} span#score').html("#{assigns(:comment).score}")),@response.body)
+      end
+    end
+  end
+
+  context "handle :delete" do
+    setup { @comment = Factory(:comment) }
+    context "by html" do
+      setup do
+        delete :destroy,:id => @comment
+      end
+      should_change "Comment.count", :by => -1
+      should_respond_with :redirect
+      should_redirect_to("comments index") {comments_path}
+    end
+    context "by xhr" do
+      setup do
+        xhr :delete,:destroy,:id => @comment
+      end
+      should_change "Comment.count", :by => -1
+      should_respond_with :success
+    end
   end
 
 
