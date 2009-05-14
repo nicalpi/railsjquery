@@ -7,6 +7,7 @@ class CommentsController < ApplicationController
     @comments = Comment.all
     respond_to do |format|
       format.html #we only respond to the html request
+      format.js { }
     end
   end
 
@@ -23,7 +24,11 @@ class CommentsController < ApplicationController
   end
 
   def create
-    @comment = Comment.build(params[:comment])
+    @comment = Comment.create(params[:comment])
+    respond_to do |format|
+      format.html { redirect_to comments_path() }
+      format.js {render :layout => false}
+    end
   end
 
   #This is not a "normal" update, I'll use this one to add points to the comment
