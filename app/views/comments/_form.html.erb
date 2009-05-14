@@ -1,0 +1,9 @@
+  <h4>Enter your comment</h4>
+  <% form_for @comment,:html => {:class => "ajaxForm"} do |f| -%>
+      <%= f.text_area :body %>
+      <div class="buttons">
+          <%= link_to 'Cancel',comments_path() %>
+          <%= f.submit("Add my comment") %>
+      </div>
+  <% end -%>
+

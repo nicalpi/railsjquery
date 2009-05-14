@@ -1,0 +1,2258 @@
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 12:26:49) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 12:26:49) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 12:26:57) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 12:26:57) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 12:27:22) [GET]
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 18ms (View: 16, DB: 19) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 12:27:22) [GET]
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 12:28:53) [GET]
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 5ms (View: 3, DB: 7) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 12:28:53) [GET]
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 12:29:06) [GET]
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 7ms (View: 4, DB: 10) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 12:29:06) [GET]
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 12:50:54) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.1ms)
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 12:50:54) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 12:50:54) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:28:49) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.2ms)
+Rendered comments/_comment (0.1ms)
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:28:49) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:28:49) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:29:00) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.1ms)
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:29:00) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:29:00) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:29:00) [GET]
+  [4;36;1mComment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (3.6ms)
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:29:00) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.9ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:29:00) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.9ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:29:00) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:30:28) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:30:28) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:30:28) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:30:28) [GET]
+  [4;36;1mComment Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (2.5ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:30:28) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:30:28) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:30:28) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:31:38) [GET]
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.1ms)
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:31:38) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:31:38) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:31:38) [GET]
+  [4;36;1mComment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (3.6ms)
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:31:38) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:31:38) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.7ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:31:38) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:34:28) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.1ms)
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (12.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:34:28) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 3ms (View: 2, DB: 13) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:34:28) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:34:28) [GET]
+  [4;36;1mComment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (5.3ms)
+Completed in 10ms (View: 8, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:34:28) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.8ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:34:28) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.8ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:34:28) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.9ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:35:29) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.2ms)
+Rendered comments/_comment (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:35:29) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:35:29) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:35:29) [GET]
+  [4;36;1mComment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (2.4ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:35:29) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:35:29) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.5ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:35:29) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:42:46) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.2ms)
+Rendered comments/_comment (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:42:46) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:42:46) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:42:46) [GET]
+  [4;36;1mComment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (2.4ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:42:46) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:42:46) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:42:46) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:43:00) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.2ms)
+Rendered comments/_comment (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:43:00) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:43:00) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:43:00) [GET]
+  [4;36;1mComment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (2.4ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:43:00) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:43:00) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:43:00) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:43:17) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.1ms)
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:43:17) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:43:17) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:43:17) [GET]
+  [4;36;1mComment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_form (3.6ms)
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:43:17) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (1.0ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:43:17) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.8ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:43:17) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.9ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:43:29) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.1ms)
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:43:30) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:43:30) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:43:30) [GET]
+  [4;36;1mComment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (3.6ms)
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:43:30) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.9ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:43:30) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.8ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:43:30) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.8ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:43:38) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.2ms)
+Rendered comments/_comment (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:43:38) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:43:38) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:43:38) [GET]
+  [4;36;1mComment Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (2.4ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:43:38) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:43:38) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:43:38) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:44:22) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.2ms)
+Rendered comments/_comment (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:44:22) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:44:22) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:44:22) [GET]
+  [4;36;1mComment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (2.4ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:44:22) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:44:22) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:44:22) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:44:34) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.2ms)
+Rendered comments/_comment (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:44:34) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:44:34) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:44:34) [GET]
+  [4;36;1mComment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (2.4ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:44:34) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:44:34) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:44:34) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:44:41) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.2ms)
+Rendered comments/_comment (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:44:41) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:44:41) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:44:41) [GET]
+  [4;36;1mComment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (2.5ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:44:41) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:44:41) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:44:41) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:50:28) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:50:28) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:50:28) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:50:28) [GET]
+  [4;36;1mComment Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (2.4ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:50:28) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:50:28) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:52:20) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.2ms)
+Rendered comments/_comment (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:52:20) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:52:20) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:52:20) [GET]
+  [4;36;1mComment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (2.4ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:52:20) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:52:20) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.2ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:52:20) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:52:39) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.1ms)
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:52:39) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.2ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:52:39) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:52:39) [GET]
+  [4;36;1mComment Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (3.8ms)
+Completed in 9ms (View: 7, DB: 2) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:52:39) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.8ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:52:39) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.8ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:52:39) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.8ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:54:14) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.2ms)
+Rendered comments/_comment (0.1ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:54:14) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:54:14) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:54:14) [GET]
+  [4;36;1mComment Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering comments/new
+Rendered comments/_form (2.4ms)
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:54:14) [GET]
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:54:14) [GET]
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:54:14) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:54:14) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.5ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:54:14) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:54:14) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:56:38) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.2ms)
+Rendered comments/_comment (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:56:38) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:56:38) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:56:38) [GET]
+  [4;36;1mComment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering comments/new
+Rendered comments/_form (2.5ms)
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:56:38) [GET]
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:56:38) [GET]
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:56:38) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.5ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:56:38) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:56:38) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:56:38) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:58:26) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.2ms)
+Rendered comments/_comment (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:58:26) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:58:26) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:58:26) [GET]
+  [4;36;1mComment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering comments/new
+Rendered comments/_form (2.5ms)
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:58:26) [GET]
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:58:26) [GET]
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:58:26) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:58:26) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:58:26) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:58:26) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:59:01) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.1ms)
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:59:01) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:59:01) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:01) [GET]
+  [4;36;1mComment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering comments/new
+Rendered comments/_form (3.6ms)
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:01) [GET]
+Rendering comments/new
+Rendered comments/_form (0.9ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:01) [GET]
+Rendering comments/new
+Rendered comments/_form (0.8ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:01) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.9ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:01) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.8ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:01) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.8ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:01) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.8ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:59:10) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.2ms)
+Rendered comments/_comment (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:59:10) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:59:10) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:10) [GET]
+  [4;36;1mComment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering comments/new
+Rendered comments/_form (2.4ms)
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:10) [GET]
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:10) [GET]
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:10) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:10) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:10) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:10) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:59:37) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.2ms)
+Rendered comments/_comment (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:59:37) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:59:37) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:37) [GET]
+  [4;36;1mComment Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering comments/new
+Rendered comments/_form (2.5ms)
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:37) [GET]
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:37) [GET]
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:37) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:37) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:37) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:37) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:59:50) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.2ms)
+Rendered comments/_comment (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:59:50) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 13:59:50) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:50) [GET]
+  [4;36;1mComment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering comments/new
+Rendered comments/_form (3.0ms)
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:50) [GET]
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:50) [GET]
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:50) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:50) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:50) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 13:59:50) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_comment (0.1ms)
+Rendered comments/_comment (0.1ms)
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m

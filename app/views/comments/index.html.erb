@@ -1,0 +1,8 @@
+    <%=
+        #Use a helper to display the current comments of the post
+        comments_display(@comments)
+    %>
+<div class="newComment">
+    <%= link_to 'Create a new comment', new_comment_path(),:class => "get"%>
+</div>
+
