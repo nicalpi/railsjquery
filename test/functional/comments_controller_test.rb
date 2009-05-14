@@ -16,6 +16,24 @@ class CommentsControllerTest < ActionController::TestCase
     should "display a link to create a comment" do
       assert_select('a',/new comment/)
     end
+
+    context "without message" do
+       should "should display a message No comments ..." do
+          assert_select("h3",/No comments/)
+        end
+    end
+
+    context "with some comment" do
+      setup do
+        Factory(:comment,:body => "My created comment")
+        get :index
+      end
+      should "display comment" do
+        assert_select("p","My created comment")
+      end
+    end
+
+
   end
 
   #Testing the comment form rendering
@@ -64,11 +82,30 @@ class CommentsControllerTest < ActionController::TestCase
            post :create, :comment => { :body => "My comment" }
         end
           should_change "Comment.count", :by => 1
-
           should_redirect_to("the index"){comments_path()}
       end
+      context "by xhr" do
+        setup do
+           xhr :post, :create, :comment => { :body => "My xhr comment" }
+        end
+          should_change "Comment.count", :by => 1
 
+          should "hide the message No comments ..." do
+            assert_match(%($(".comments h3").hide()),@response.body)
+          end
+
+          should "hide the form comment" do
+            assert_match(%($(".newComment form").hide()),@response.body)
+          end
+
+          should "display the created new created message" do
+            assert_match(%(My xhr comment),@response.body)
+          end
+
+      end
   end
+
+
 
 end
 

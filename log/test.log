@@ -8365,3 +8365,3327 @@ Rendered comments/_comment (0.1ms)
 Rendered comments/_form (0.6ms)
 Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
   [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:11:01) [GET]
+  [4;35;1mComment Load (1.0ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:11:01) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:11:01) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:11:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:11:01', 'My comment', '2009-05-14 17:11:01', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 21ms (DB: 2) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (6.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:11:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:11:01', 'My comment', '2009-05-14 17:11:01', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 4ms (DB: 8) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:11:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:11:01', 'My comment', '2009-05-14 17:11:01', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 5ms (DB: 2) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:11:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.7ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:11:01', 'My comment', '2009-05-14 17:11:01', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 5ms (DB: 2) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (1.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:11:01) [GET]
+Rendering comments/new
+Rendered comments/_form (2.8ms)
+Completed in 6ms (View: 5, DB: 2) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:11:01) [GET]
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:11:01) [GET]
+Rendering comments/new
+Rendered comments/_form (1.6ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:11:01) [GET]
+Rendering comments/new
+Rendered comments/_form (1.5ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:11:01) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.8ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:11:01) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:11:01) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.6ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:11:01) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:12:11) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:12:11) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:12:11) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:12:11) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:12:11', 'My comment', '2009-05-14 17:12:11', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 16ms (DB: 2) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (8.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:12:11) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:12:11', 'My comment', '2009-05-14 17:12:11', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 5ms (DB: 9) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:12:11) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:12:11', 'My comment', '2009-05-14 17:12:11', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (120.8ms)
+Completed in 151ms (View: 146, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:12:12) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:12:12', 'My comment', '2009-05-14 17:12:12', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.6ms)
+Completed in 6ms (View: 2, DB: 3) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:12:12) [GET]
+Rendering comments/new
+Rendered comments/_form (2.6ms)
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:12:12) [GET]
+Rendering comments/new
+Rendered comments/_form (1.7ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:12:12) [GET]
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:12:12) [GET]
+Rendering comments/new
+Rendered comments/_form (1.2ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:12:12) [GET]
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:12:12) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.2ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:12:12) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:12:12) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:12:20) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:12:20) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:12:20) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:12:20) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:12:20', 'My comment', '2009-05-14 17:12:20', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 16ms (DB: 2) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (7.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:12:20) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:12:20', 'My comment', '2009-05-14 17:12:20', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 5ms (DB: 8) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:12:20) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.4ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:12:20', 'My comment', '2009-05-14 17:12:20', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (25.3ms)
+Completed in 42ms (View: 37, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:12:20) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:12:20', 'My comment', '2009-05-14 17:12:20', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.4ms)
+Completed in 6ms (View: 2, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:12:20) [GET]
+Rendering comments/new
+Rendered comments/_form (2.3ms)
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:12:20) [GET]
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:12:20) [GET]
+Rendering comments/new
+Rendered comments/_form (2.2ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:12:20) [GET]
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:12:20) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:12:20) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:12:20) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.7ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:12:20) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 71ms (View: 68, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:13:21) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:13:21) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:13:21) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:13:21) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:13:21', 'My comment', '2009-05-14 17:13:21', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 16ms (DB: 2) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (6.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:13:21) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:13:21', 'My comment', '2009-05-14 17:13:21', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 5ms (DB: 7) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:13:21) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:13:21', 'My comment', '2009-05-14 17:13:21', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (24.0ms)
+Completed in 40ms (View: 35, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:13:21) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:13:21', 'My comment', '2009-05-14 17:13:21', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.4ms)
+Completed in 6ms (View: 1, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:13:21) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:13:21', 'My comment', '2009-05-14 17:13:21', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:13:21) [GET]
+Rendering comments/new
+Rendered comments/_form (2.1ms)
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:13:21) [GET]
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:13:21) [GET]
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:13:21) [GET]
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:13:21) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:13:21) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:13:21) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.2ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:13:21) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:14:15) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:14:15) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:14:15) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:14:15) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:14:15', 'My xhr comment', '2009-05-14 17:14:15', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 17ms (DB: 2) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:14:15) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:14:15', 'My xhr comment', '2009-05-14 17:14:15', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 5ms (DB: 4) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (1.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:14:15) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:14:15', 'My comment', '2009-05-14 17:14:15', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (25.2ms)
+Completed in 41ms (View: 37, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:14:15) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:14:15', 'My comment', '2009-05-14 17:14:15', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 6ms (View: 1, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:14:15) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;35;1mSQL (0.6ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:14:15', 'My comment', '2009-05-14 17:14:15', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 7ms (View: 1, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:14:15) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:14:15', 'My comment', '2009-05-14 17:14:15', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.4ms)
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:14:15) [GET]
+Rendering comments/new
+Rendered comments/_form (2.6ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:14:15) [GET]
+Rendering comments/new
+Rendered comments/_form (2.1ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:14:15) [GET]
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:14:15) [GET]
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:14:15) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:14:15) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (2.6ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:14:15) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:14:15) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:14:39) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:14:39) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:14:39) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:14:39) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:14:39', 'My comment', '2009-05-14 17:14:39', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 16ms (DB: 2) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (6.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:14:39) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:14:39', 'My comment', '2009-05-14 17:14:39', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 4ms (DB: 8) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:14:39) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:14:39', 'My xhr comment', '2009-05-14 17:14:39', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (24.3ms)
+Completed in 40ms (View: 35, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:14:39) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:14:39', 'My xhr comment', '2009-05-14 17:14:39', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 6ms (View: 1, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:14:39) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:14:39', 'My xhr comment', '2009-05-14 17:14:39', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:14:39) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:14:39', 'My xhr comment', '2009-05-14 17:14:39', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (1.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:14:39) [GET]
+Rendering comments/new
+Rendered comments/_form (2.1ms)
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:14:39) [GET]
+Rendering comments/new
+Rendered comments/_form (2.3ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:14:39) [GET]
+Rendering comments/new
+Rendered comments/_form (1.5ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:14:39) [GET]
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:14:39) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:14:39) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:14:39) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:14:39) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (67.3ms)
+Completed in 71ms (View: 69, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:15:39) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:15:39) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:15:39) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:15:39) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:15:39', 'My comment', '2009-05-14 17:15:39', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 15ms (DB: 3) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (7.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:15:39) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:15:39', 'My comment', '2009-05-14 17:15:39', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 4ms (DB: 8) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:15:39) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:15:39', 'My comment', '2009-05-14 17:15:39', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:15:39) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:15:39', 'My xhr comment', '2009-05-14 17:15:39', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (27.5ms)
+Completed in 43ms (View: 38, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:15:39) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:15:39', 'My xhr comment', '2009-05-14 17:15:39', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.4ms)
+Completed in 7ms (View: 1, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:15:39) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.5ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:15:39', 'My xhr comment', '2009-05-14 17:15:39', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 6ms (View: 1, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:15:39) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:15:39', 'My xhr comment', '2009-05-14 17:15:39', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:15:39) [GET]
+Rendering comments/new
+Rendered comments/_form (3.2ms)
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:15:39) [GET]
+Rendering comments/new
+Rendered comments/_form (1.5ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:15:39) [GET]
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:15:39) [GET]
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:15:39) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (2.6ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:15:39) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:15:39) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:15:39) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (2.0ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:18:05) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:18:05) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:18:05) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:18:05) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:18:05) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:18:05', 'My comment', '2009-05-14 17:18:05', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 17ms (DB: 2) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;35;1mSQL (3.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:18:05) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:18:05', 'My comment', '2009-05-14 17:18:05', NULL)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 5ms (DB: 5) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:18:06) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.4ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:18:06', 'My xhr comment', '2009-05-14 17:18:06', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (26.1ms)
+Completed in 42ms (View: 35, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;35;1mSQL (2.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:18:06) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:18:06', 'My xhr comment', '2009-05-14 17:18:06', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 6ms (View: 1, DB: 3) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:18:06) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:18:06', 'My xhr comment', '2009-05-14 17:18:06', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:18:06) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:18:06', 'My xhr comment', '2009-05-14 17:18:06', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.4ms)
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:18:06) [GET]
+Rendering comments/new
+Rendered comments/_form (4.2ms)
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:18:06) [GET]
+Rendering comments/new
+Rendered comments/_form (2.0ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:18:06) [GET]
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:18:06) [GET]
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:18:06) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:18:06) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:18:06) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:18:06) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:19:55) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:19:55) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:19:55) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:19:55) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:19:55) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:19:55) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:19:55', 'My comment', '2009-05-14 17:19:55', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 18ms (DB: 3) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (7.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:19:55) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:19:55', 'My comment', '2009-05-14 17:19:55', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 5ms (DB: 8) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:19:55) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:19:55', 'My xhr comment', '2009-05-14 17:19:55', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (24.5ms)
+Completed in 38ms (View: 34, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:19:55) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:19:55', 'My xhr comment', '2009-05-14 17:19:55', NULL)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 7ms (View: 1, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:19:55) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:19:55', 'My xhr comment', '2009-05-14 17:19:55', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:19:55) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:19:55', 'My xhr comment', '2009-05-14 17:19:55', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.4ms)
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:19:55) [GET]
+Rendering comments/new
+Rendered comments/_form (2.3ms)
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:19:55) [GET]
+Rendering comments/new
+Rendered comments/_form (1.5ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:19:55) [GET]
+Rendering comments/new
+Rendered comments/_form (1.5ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:19:55) [GET]
+Rendering comments/new
+Rendered comments/_form (1.5ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:19:55) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:19:55) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:19:55) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.8ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:19:55) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.8ms)
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:21:26) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:21:26) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:21:26) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:21:26) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:21:26) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:21:26) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:21:26', 'My comment', '2009-05-14 17:21:26', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 18ms (DB: 2) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:21:26) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.4ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:21:26', 'My comment', '2009-05-14 17:21:26', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 5ms (DB: 5) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:21:26) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:21:26', 'My xhr comment', '2009-05-14 17:21:26', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (26.7ms)
+Completed in 41ms (View: 37, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:21:26) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:21:26', 'My xhr comment', '2009-05-14 17:21:26', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 7ms (View: 1, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:21:26) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:21:26', 'My xhr comment', '2009-05-14 17:21:26', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (1.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:21:26) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:21:26', 'My xhr comment', '2009-05-14 17:21:26', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 7ms (View: 1, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (1.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:21:26) [GET]
+Rendering comments/new
+Rendered comments/_form (2.2ms)
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:21:26) [GET]
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:21:26) [GET]
+Rendering comments/new
+Rendered comments/_form (1.7ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:21:26) [GET]
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:21:26) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:21:26) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:21:26) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:21:26) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:22:24) [GET]
+  [4;35;1mComment Load (0.7ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:22:24) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:22:24) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:22:24) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:22:24) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:22:24) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:22:24', 'My comment', '2009-05-14 17:22:24', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 17ms (DB: 2) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (5.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:22:24) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (1.0ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:22:24', 'My comment', '2009-05-14 17:22:24', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 6ms (DB: 7) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:22:24) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:22:24', 'My xhr comment', '2009-05-14 17:22:24', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (27.1ms)
+Completed in 42ms (View: 37, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:22:24) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:22:24', 'My xhr comment', '2009-05-14 17:22:24', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:22:24) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:22:24', 'My xhr comment', '2009-05-14 17:22:24', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.6ms)
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:22:24) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:22:24', 'My xhr comment', '2009-05-14 17:22:24', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 7ms (View: 1, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:22:24) [GET]
+Rendering comments/new
+Rendered comments/_form (2.3ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:22:24) [GET]
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:22:24) [GET]
+Rendering comments/new
+Rendered comments/_form (1.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:22:24) [GET]
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:22:24) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:22:24) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:22:24) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:22:24) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:24:01) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:24:01) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:24:01) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:24:01) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:24:01) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:24:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:24:01', 'My comment', '2009-05-14 17:24:01', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 18ms (DB: 2) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (4.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:24:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:24:01', 'My comment', '2009-05-14 17:24:01', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 6ms (DB: 5) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:24:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:24:01', 'My xhr comment', '2009-05-14 17:24:01', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (25.3ms)
+Completed in 41ms (View: 35, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:24:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:24:01', 'My xhr comment', '2009-05-14 17:24:01', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 8ms (View: 1, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:24:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.5ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:24:01', 'My xhr comment', '2009-05-14 17:24:01', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 6ms (View: 1, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:24:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:24:01', 'My xhr comment', '2009-05-14 17:24:01', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:24:01) [GET]
+Rendering comments/new
+Rendered comments/_form (2.9ms)
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:24:01) [GET]
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:24:01) [GET]
+Rendering comments/new
+Rendered comments/_form (2.2ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:24:01) [GET]
+Rendering comments/new
+Rendered comments/_form (2.2ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:24:01) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:24:01) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:24:01) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:24:01) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:25:10) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:25:10) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:25:10) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:25:10) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mComment Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:25:10', 'My created comment', '2009-05-14 17:25:10', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (8.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:25:10) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 10) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:25:10) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:25:10', 'My comment', '2009-05-14 17:25:10', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;35;1mSQL (1.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:25:10) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:25:10', 'My comment', '2009-05-14 17:25:10', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 5ms (DB: 3) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:25:10) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:25:10', 'My xhr comment', '2009-05-14 17:25:10', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (27.1ms)
+Completed in 43ms (View: 38, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:25:10) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:25:10', 'My xhr comment', '2009-05-14 17:25:10', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:25:10) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:25:10', 'My xhr comment', '2009-05-14 17:25:10', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.4ms)
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:25:10) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:25:10', 'My xhr comment', '2009-05-14 17:25:10', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.6ms)
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:25:10) [GET]
+Rendering comments/new
+Rendered comments/_form (2.8ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:25:10) [GET]
+Rendering comments/new
+Rendered comments/_form (2.2ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:25:10) [GET]
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:25:10) [GET]
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:25:10) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:25:10) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:25:10) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.2ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:25:10) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:25:28) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:25:28) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:25:28) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:25:28) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mComment Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:25:28', 'My created comment', '2009-05-14 17:25:28', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (6.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:25:28) [GET]
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 8) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:25:28) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:25:28', 'My comment', '2009-05-14 17:25:28', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 4ms (DB: 2) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:25:28) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:25:28', 'My comment', '2009-05-14 17:25:28', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 4ms (DB: 2) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;36;1mSQL (1.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:25:28) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:25:28', 'My xhr comment', '2009-05-14 17:25:28', NULL)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (23.9ms)
+Completed in 39ms (View: 33, DB: 3) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:25:28) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:25:28', 'My xhr comment', '2009-05-14 17:25:28', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.4ms)
+Completed in 6ms (View: 2, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:25:28) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:25:28', 'My xhr comment', '2009-05-14 17:25:28', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.4ms)
+Completed in 7ms (View: 3, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (1.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:25:28) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:25:28', 'My xhr comment', '2009-05-14 17:25:28', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 6ms (View: 1, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:25:28) [GET]
+Rendering comments/new
+Rendered comments/_form (2.3ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:25:28) [GET]
+Rendering comments/new
+Rendered comments/_form (2.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:25:28) [GET]
+Rendering comments/new
+Rendered comments/_form (1.2ms)
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:25:28) [GET]
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:25:28) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.9ms)
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:25:28) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:25:28) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:25:28) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.2ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:26:00) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:26:00) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:26:00) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:26:00) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mComment Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:26:00', 'My created comment', '2009-05-14 17:26:00', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (5.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:26:00) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 4ms (View: 2, DB: 7) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:26:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:26:01', 'My comment', '2009-05-14 17:26:01', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;35;1mSQL (3.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:26:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:26:01', 'My comment', '2009-05-14 17:26:01', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 4ms (DB: 5) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:26:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:26:01', 'My xhr comment', '2009-05-14 17:26:01', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (25.3ms)
+Completed in 40ms (View: 35, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:26:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:26:01', 'My xhr comment', '2009-05-14 17:26:01', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.9ms)
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:26:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:26:01', 'My xhr comment', '2009-05-14 17:26:01', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.4ms)
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:26:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:26:01', 'My xhr comment', '2009-05-14 17:26:01', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (1.0ms)
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:26:01) [GET]
+Rendering comments/new
+Rendered comments/_form (2.1ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:26:01) [GET]
+Rendering comments/new
+Rendered comments/_form (1.6ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:26:01) [GET]
+Rendering comments/new
+Rendered comments/_form (1.2ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:26:01) [GET]
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:26:01) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.2ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:26:01) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.4ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:26:01) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.7ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:26:01) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:27:06) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:27:06) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:27:06) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:27:06) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mComment Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:06', 'My created comment', '2009-05-14 17:27:06', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:27:06) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (24.0ms)
+Completed in 29ms (View: 28, DB: 2) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (4.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:27:06) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 5) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:27:06) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:06', 'My comment', '2009-05-14 17:27:06', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (52.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:27:06) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:06', 'My comment', '2009-05-14 17:27:06', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 5ms (DB: 53) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:27:06) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:06', 'My xhr comment', '2009-05-14 17:27:06', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (1.2ms)
+Completed in 16ms (View: 12, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:27:06) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:06', 'My xhr comment', '2009-05-14 17:27:06', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.6ms)
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:27:06) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (1.6ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:06', 'My xhr comment', '2009-05-14 17:27:06', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 7ms (View: 1, DB: 3) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:27:06) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:06', 'My xhr comment', '2009-05-14 17:27:06', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:06) [GET]
+Rendering comments/new
+Rendered comments/_form (2.9ms)
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:06) [GET]
+Rendering comments/new
+Rendered comments/_form (1.8ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:06) [GET]
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:06) [GET]
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:06) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:06) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:06) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.2ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:06) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:27:47) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:27:47) [GET]
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:27:47) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:27:47) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mComment Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.6ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:47', 'My created comment', '2009-05-14 17:27:47', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:27:47) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (25.5ms)
+Completed in 31ms (View: 29, DB: 2) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (8.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:27:47) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 3ms (View: 2, DB: 9) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:27:47) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:47', 'My comment', '2009-05-14 17:27:47', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:27:47) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:47', 'My comment', '2009-05-14 17:27:47', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 4ms (DB: 2) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:27:47) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.5ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:47', 'My xhr comment', '2009-05-14 17:27:47', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.9ms)
+Completed in 17ms (View: 12, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:27:47) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:47', 'My xhr comment', '2009-05-14 17:27:47', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:27:47) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:47', 'My xhr comment', '2009-05-14 17:27:47', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.3ms)
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (1.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:27:47) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:47', 'My xhr comment', '2009-05-14 17:27:47', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.4ms)
+Completed in 7ms (View: 2, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:47) [GET]
+Rendering comments/new
+Rendered comments/_form (2.8ms)
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:47) [GET]
+Rendering comments/new
+Rendered comments/_form (2.8ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:47) [GET]
+Rendering comments/new
+Rendered comments/_form (1.8ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:47) [GET]
+Rendering comments/new
+Rendered comments/_form (2.2ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:47) [GET]
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.7ms)
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:47) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (67.2ms)
+Completed in 72ms (View: 70, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:47) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.2ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:47) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.3ms)
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:27:56) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 17ms (View: 9, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:27:56) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:27:56) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:27:56) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mComment Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:56', 'My created comment', '2009-05-14 17:27:56', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:27:56) [GET]
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (35.4ms)
+Completed in 42ms (View: 40, DB: 2) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (4.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-14 18:27:56) [GET]
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 5ms (View: 3, DB: 5) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (4.4ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:27:56) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:56', 'My comment', '2009-05-14 17:27:56', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 6ms (DB: 5) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:27:56) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:56', 'My comment', '2009-05-14 17:27:56', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 6ms (DB: 2) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:27:56) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:56', 'My xhr comment', '2009-05-14 17:27:56', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (1.3ms)
+Completed in 20ms (View: 14, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:27:56) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:56', 'My xhr comment', '2009-05-14 17:27:56', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.4ms)
+Completed in 8ms (View: 2, DB: 2) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:27:56) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.4ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:56', 'My xhr comment', '2009-05-14 17:27:56', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.5ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-14 18:27:56) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-14 17:27:56', 'My xhr comment', '2009-05-14 17:27:56', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.4ms)
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:56) [GET]
+Rendering comments/new
+Rendered comments/_form (3.5ms)
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:56) [GET]
+Rendering comments/new
+Rendered comments/_form (1.8ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:56) [GET]
+Rendering comments/new
+Rendered comments/_form (1.7ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:56) [GET]
+Rendering comments/new
+Rendered comments/_form (1.7ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:56) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.9ms)
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:57) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.7ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:57) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (1.8ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-14 18:27:57) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (2.0ms)
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
