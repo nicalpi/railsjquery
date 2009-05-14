@@ -47,9 +47,13 @@ class CommentsControllerTest < ActionController::TestCase
 
       should_respond_with :success
       should_not_assign_to :comments #we don't need another DB call, we are in xhr
-      #In both case
-        should "display a form" do
-          assert_select("$")
+
+      should "replace the .newComment content" do
+          assert_match(%($(".newComment").html),@response.body)
+      end
+
+      should "display a form" do
+        assert_match(%(form),@response.body)
       end
 
     end
