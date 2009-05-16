@@ -7,7 +7,6 @@ class CommentsController < ApplicationController
     @comments = Comment.all
     respond_to do |format|
       format.html #we only respond to the html request
-      format.js { }
     end
   end
 
@@ -33,11 +32,24 @@ class CommentsController < ApplicationController
 
   #This is not a "normal" update, I'll use this one to add points to the comment
   def update
+    @comment = Comment.find(params[:id])
+    @comment.score = @comment.score + 1
+    @comment.save
 
+    respond_to do |format|
+      format.html { redirect_to comments_path }
+      format.js {render :layout => false}
+    end
   end
 
-  def delete
+  def destroy
+    @comment = Comment.find(params[:id])
+    @comment.destroy
 
+    respond_to do |format|
+      format.html { redirect_to comments_path }
+      format.js {render :layout => false}
+    end
   end
 
   protected

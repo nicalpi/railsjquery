@@ -1,3 +1,9 @@
-<p><%= comment.body %></p>
+<%=
+    content_tag(:p,
+    comment.body,
+    :id =>"comment#{comment.id}")
+%>
+<span id="score"><%= comment.score %></span><span> - <%= link_to 'Add one point!',comment_path(comment),:method => :put,:class => "post"  %></span>
+<p> - <%= link_to '*Delete this comment',comment_path(comment),:method => :delete,:class => "delete"  %></p>
 <p><%= comment.created_at %></p>
 

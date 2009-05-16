@@ -2,7 +2,7 @@ class CreateComments < ActiveRecord::Migration
   def self.up
     create_table :comments do |t|
       t.text :body
-      t.integer :point
+      t.integer :score
 
       t.timestamps
     end
@@ -12,3 +12,4 @@ class CreateComments < ActiveRecord::Migration
     drop_table :comments
   end
 end
+
