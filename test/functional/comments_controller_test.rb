@@ -95,7 +95,7 @@ class CommentsControllerTest < ActionController::TestCase
           end
 
           should "hide the form comment" do
-            assert_match(%($(".newComment form").hide()),@response.body)
+            assert_match(/new comment/,@response.body)
           end
 
           should "display the created new created message" do

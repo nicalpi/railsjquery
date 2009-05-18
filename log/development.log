@@ -3659,3 +3659,297 @@ Completed in 14ms (View: 5, DB: 1) | 200 OK [http://railsjquery.local/comments]
   [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
   [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090514111451')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 12:31:12) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (57.2ms)
+Completed in 163ms (View: 157, DB: 1) | 200 OK [http://railsjquery.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2009-05-18 12:55:48) [GET]
+  Parameters: {"_"=>"1242647748504"}
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering comments/new
+Rendered comments/_form (86.1ms)
+Completed in 108ms (View: 99, DB: 1) | 200 OK [http://railsjquery.local/comments/new?_=1242647748504]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-05-18 12:55:52) [POST]
+  Parameters: {"comment"=>{"body"=>"test"}, "authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8="}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 11:55:52', 'test', '2009-05-18 11:55:52', 0)[0m
+  [4;36;1mSQL (6.2ms)[0m   [0;1mCOMMIT[0m
+Rendering comments/create
+Rendered comments/_comment (79.2ms)
+Completed in 127ms (View: 96, DB: 7) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 12:55:54) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (4.7ms)
+Rendered comments/_comment (0.9ms)
+Completed in 27ms (View: 19, DB: 1) | 200 OK [http://railsjquery.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2009-05-18 12:55:56) [GET]
+  Parameters: {"_"=>"1242647756416"}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendering comments/new
+Rendered comments/_form (2.7ms)
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://railsjquery.local/comments/new?_=1242647756416]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-05-18 12:56:03) [POST]
+  Parameters: {"comment"=>{"body"=>"This is my new comment"}, "authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8="}
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 11:56:03', 'This is my new comment', '2009-05-18 11:56:03', 0)[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mCOMMIT[0m
+Rendering comments/create
+Rendered comments/_comment (0.9ms)
+Completed in 17ms (View: 2, DB: 4) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 12:56:19) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.9ms)
+Rendered comments/_comment (0.9ms)
+Rendered comments/_comment (0.9ms)
+Completed in 16ms (View: 8, DB: 1) | 200 OK [http://railsjquery.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 12:58:00) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (4.1ms)
+Rendered comments/_comment (0.9ms)
+Rendered comments/_comment (0.9ms)
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://railsjquery.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2009-05-18 12:58:02) [GET]
+  Parameters: {"_"=>"1242647882592"}
+  [4;36;1mComment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering comments/new
+Rendered comments/_form (2.4ms)
+Completed in 69ms (View: 3, DB: 1) | 200 OK [http://railsjquery.local/comments/new?_=1242647882592]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-05-18 12:58:13) [POST]
+  Parameters: {"comment"=>{"body"=>"Another comment, very good"}, "authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8="}
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 11:58:13', 'Another comment, very good', '2009-05-18 11:58:13', 0)[0m
+  [4;36;1mSQL (5.9ms)[0m   [0;1mCOMMIT[0m
+Rendering comments/create
+
+ActionView::TemplateError (undefined method `espcape_javascript' for #<ActionView::Base:0xb6a4e690>) on line #4 of app/views/comments/create.js.erb:
+1: //We hide the message saying no comment if present
+2: $(".comments h3").hide();
+3: //Hide the comment form
+4: $(".newComment").html(<%= espcape_javascript(new_comment_link) %>);
+5: //Display the new comment
+6: $(".comments").append("<%= escape_javascript(render :partial => @comment) %>");
+7: //Ajaxify the new links
+
+    app/views/comments/create.js.erb:4
+    app/controllers/comments_controller.rb:29:in `create'
+    app/controllers/comments_controller.rb:27:in `create'
+    passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+    passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (61.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-05-18 12:58:27) [POST]
+  Parameters: {"comment"=>{"body"=>"Another comment, very good"}, "authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8="}
+  [4;35;1mComment Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 11:58:27', 'Another comment, very good', '2009-05-18 11:58:27', 0)[0m
+  [4;36;1mSQL (4.1ms)[0m   [0;1mCOMMIT[0m
+Rendering comments/create
+Rendered comments/_comment (1.3ms)
+Completed in 23ms (View: 6, DB: 6) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 12:58:38) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (0.9ms)
+Rendered comments/_comment (0.9ms)
+Rendered comments/_comment (0.9ms)
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://railsjquery.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2009-05-18 12:58:46) [GET]
+  Parameters: {"_"=>"1242647926043"}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendering comments/new
+Rendered comments/_form (2.8ms)
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://railsjquery.local/comments/new?_=1242647926043]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-05-18 12:58:49) [POST]
+  Parameters: {"comment"=>{"body"=>"dd"}, "authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8="}
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 11:58:49', 'dd', '2009-05-18 11:58:49', 0)[0m
+  [4;35;1mSQL (7.6ms)[0m   [0mCOMMIT[0m
+Rendering comments/create
+Rendered comments/_comment (0.9ms)
+Completed in 23ms (View: 3, DB: 9) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-05-18 12:59:04) [POST]
+  Parameters: {"comment"=>{"body"=>"dd"}, "authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8="}
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 11:59:04', 'dd', '2009-05-18 11:59:04', 0)[0m
+  [4;35;1mSQL (5.6ms)[0m   [0mCOMMIT[0m
+Rendering comments/create
+Rendered comments/_comment (0.9ms)
+Completed in 24ms (View: 6, DB: 7) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2009-05-18 12:59:06) [GET]
+  Parameters: {"_"=>"1242647946824"}
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering comments/new
+Rendered comments/_form (2.7ms)
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://railsjquery.local/comments/new?_=1242647946824]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-05-18 12:59:09) [POST]
+  Parameters: {"comment"=>{"body"=>"sss"}, "authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8="}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 11:59:09', 'sss', '2009-05-18 11:59:09', 0)[0m
+  [4;36;1mSQL (15.4ms)[0m   [0;1mCOMMIT[0m
+Rendering comments/create
+Rendered comments/_comment (0.9ms)
+Completed in 30ms (View: 3, DB: 17) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2009-05-18 13:00:36) [DELETE]
+  Parameters: {"id"=>"6"}
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 6) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Destroy (0.2ms)[0m   [0;1mDELETE FROM `comments` WHERE `id` = 6[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCOMMIT[0m
+Rendering comments/destroy
+Completed in 18ms (View: 4, DB: 3) | 200 OK [http://railsjquery.local/comments/6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2009-05-18 13:00:38) [DELETE]
+  Parameters: {"id"=>"9"}
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 9) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Destroy (0.1ms)[0m   [0mDELETE FROM `comments` WHERE `id` = 9[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mCOMMIT[0m
+Rendering comments/destroy
+Completed in 14ms (View: 1, DB: 5) | 200 OK [http://railsjquery.local/comments/9]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2009-05-18 13:00:39) [DELETE]
+  Parameters: {"id"=>"11"}
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 11) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Destroy (0.1ms)[0m   [0;1mDELETE FROM `comments` WHERE `id` = 11[0m
+  [4;35;1mSQL (4.7ms)[0m   [0mCOMMIT[0m
+Rendering comments/destroy
+Completed in 15ms (View: 1, DB: 6) | 200 OK [http://railsjquery.local/comments/11]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2009-05-18 13:00:40) [DELETE]
+  Parameters: {"id"=>"12"}
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 12) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Destroy (0.2ms)[0m   [0mDELETE FROM `comments` WHERE `id` = 12[0m
+  [4;36;1mSQL (4.4ms)[0m   [0;1mCOMMIT[0m
+Rendering comments/destroy
+Completed in 15ms (View: 1, DB: 6) | 200 OK [http://railsjquery.local/comments/12]

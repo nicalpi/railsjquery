@@ -1,7 +1,7 @@
 //We hide the message saying no comment if present
 $(".comments h3").hide();
 //Hide the comment form
-$(".newComment form").hide();
+$(".newComment").html("<%= escape_javascript(new_comment_link) %>");
 //Display the new comment
 $(".comments").append("<%= escape_javascript(render :partial => @comment) %>");
 //Ajaxify the new links
