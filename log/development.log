@@ -1706,3 +1706,1956 @@ Migrating to CreateComments (20090514111451)
   [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
   [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
   [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090514111451')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:06:15) [GET]
+  [4;36;1mComment Load (0.7ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+
+ActionView::TemplateError (undefined method `score' for #<Comment:0xb661bf28>) on line #6 of app/views/comments/_comment.html.erb:
+3:     comment.body,
+4:     :id =>"comment#{comment.id}")
+5: %>
+6: <span id="score"><%= comment.score %></span><span> - <%= link_to 'Add one point!',comment_path(comment),:method => :put,:class => "post"  %></span>
+7: <p> - <%= link_to '*Delete this comment',comment_path(comment),:method => :delete,:class => "delete"  %></p>
+8: <p><%= comment.created_at %></p>
+
+    app/views/comments/_comment.html.erb:6
+    app/helpers/comments_helper.rb:6:in `comments_display'
+    app/views/comments/index.html.erb:3
+    app/controllers/comments_controller.rb:8:in `index'
+    passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+    passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (59.4ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:07:01) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (155.5ms)
+Rendered comments/_comment (1.1ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (0.9ms)
+Rendered comments/_comment (0.9ms)
+Rendered comments/_comment (0.9ms)
+Rendered comments/_comment (0.9ms)
+Rendered comments/_comment (0.9ms)
+Completed in 187ms (View: 179, DB: 1) | 200 OK [http://railsjquery.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2009-05-18 09:07:08) [DELETE]
+  Parameters: {"id"=>"1"}
+  [4;36;1mComment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Destroy (0.3ms)[0m   [0mDELETE FROM `comments` WHERE `id` = 1[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCOMMIT[0m
+Rendering comments/destroy
+Completed in 113ms (View: 73, DB: 4) | 200 OK [http://railsjquery.local/comments/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:07:14) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (4.1ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (0.9ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (0.9ms)
+Rendered comments/_comment (0.9ms)
+Rendered comments/_comment (0.9ms)
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://railsjquery.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:07:16) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (2.9ms)
+Rendered comments/_comment (0.6ms)
+Rendered comments/_comment (0.6ms)
+Rendered comments/_comment (0.6ms)
+Rendered comments/_comment (0.6ms)
+Rendered comments/_comment (0.6ms)
+Rendered comments/_comment (0.6ms)
+Completed in 17ms (View: 9, DB: 1) | 200 OK [http://railsjquery.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2009-05-18 09:07:25) [DELETE]
+  Parameters: {"id"=>"4"}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Destroy (0.2ms)[0m   [0;1mDELETE FROM `comments` WHERE `id` = 4[0m
+  [4;35;1mSQL (4.8ms)[0m   [0mCOMMIT[0m
+Rendering comments/destroy
+Completed in 16ms (View: 1, DB: 6) | 200 OK [http://railsjquery.local/comments/4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:07:28) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.8ms)
+Rendered comments/_comment (0.9ms)
+Rendered comments/_comment (0.9ms)
+Rendered comments/_comment (0.9ms)
+Rendered comments/_comment (0.9ms)
+Rendered comments/_comment (0.9ms)
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://railsjquery.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:07:34) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"2"}
+  [4;36;1mComment Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/controllers/comments_controller.rb:36:in `update'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#2 (for 127.0.0.1 at 2009-05-18 09:07:34) [POST]
+Rendered rescues/_trace (52.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+ActionController::UnknownAction (No action responded to 2. Actions: create, destroy, index, new, and update):
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:08:09) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (55.9ms)
+Rendered comments/_comment (0.8ms)
+Rendered comments/_comment (0.6ms)
+Rendered comments/_comment (0.6ms)
+Rendered comments/_comment (0.6ms)
+Rendered comments/_comment (0.7ms)
+Completed in 163ms (View: 71, DB: 1) | 200 OK [http://railsjquery.local/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:08:33) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"2"}
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/controllers/comments_controller.rb:36:in `update'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+
+
+Processing CommentsController#2 (for 127.0.0.1 at 2009-05-18 09:08:33) [POST]
+
+ActionController::UnknownAction (No action responded to 2. Actions: create, destroy, index, new, and update):
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+Rendered rescues/_trace (52.4ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:10:15) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"2"}
+authenticity_tokenIBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=_methodputactionupdateid2controllercomments
+  [4;36;1mComment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/controllers/comments_controller.rb:37:in `update'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (52.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:10:57) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"2"}
+--------2
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/controllers/comments_controller.rb:37:in `update'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (52.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:11:38) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"2"}
+  [4;36;1mComment Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/controllers/comments_controller.rb:36:in `update'
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (100.1ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateComments (20090514111451)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateComments (20090514111451)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.7ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateComments (20090514111451)
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `body` text, `score` int(11) DEFAULT 0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090514111451')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:14:11) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 21ms (View: 14, DB: 0) | 200 OK [http://railsjquery.local/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2009-05-18 09:14:13) [GET]
+  Parameters: {"_"=>"1242634453696"}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendering comments/new
+Rendered comments/_form (13.6ms)
+Completed in 52ms (View: 44, DB: 1) | 200 OK [http://railsjquery.local/comments/new?_=1242634453696]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-05-18 09:14:18) [POST]
+  Parameters: {"comment"=>{"body"=>"my new comment\n"}, "authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8="}
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:14:18', 'my new comment\n', '2009-05-18 08:14:18', 0)[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mCOMMIT[0m
+Rendering comments/create
+Rendered comments/_comment (78.0ms)
+Completed in 152ms (View: 125, DB: 4) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:14:23) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"1"}
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:14:23', `score` = 1 WHERE `id` = 1[0m
+  [4;36;1mSQL (5.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://railsjquery.local/comments
+Completed in 18ms (DB: 7) | 302 Found [http://railsjquery.local/comments/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:14:23) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (69.6ms)
+Completed in 80ms (View: 71, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:14:55) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (5.0ms)
+Completed in 19ms (View: 10, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:14:57) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"1"}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:14:57', `score` = 2 WHERE `id` = 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (30.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://railsjquery.local/comments
+Completed in 44ms (DB: 32) | 302 Found [http://railsjquery.local/comments/1]
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:14:57) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:14:57', `score` = 3 WHERE `id` = 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering comments/update
+Completed in 30ms (View: 6, DB: 2) | 200 OK [http://railsjquery.local/comments/1]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:14:57) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (2.8ms)
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:15:01) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.9ms)
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:15:03) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"1"}
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Update (0.3ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:15:03', `score` = 4 WHERE `id` = 1[0m
+  [4;36;1mSQL (7.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://railsjquery.local/comments
+Completed in 20ms (DB: 9) | 302 Found [http://railsjquery.local/comments/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:15:03) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (4.0ms)
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://railsjquery.local/comments]
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:15:03) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Update (0.1ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:15:03', `score` = 5 WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Rendering comments/update
+Completed in 9ms (View: 0, DB: 1) | 200 OK [http://railsjquery.local/comments/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:15:05) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"1"}
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:15:05', `score` = 6 WHERE `id` = 1[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://railsjquery.local/comments
+Completed in 16ms (DB: 4) | 302 Found [http://railsjquery.local/comments/1]
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:15:05) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:15:05', `score` = 7 WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Rendering comments/update
+Completed in 17ms (View: 4, DB: 2) | 200 OK [http://railsjquery.local/comments/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:15:05) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.8ms)
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:15:13) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:15:14', `score` = 8 WHERE `id` = 1[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:15:14) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (5.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://railsjquery.local/comments
+Completed in 18ms (DB: 7) | 302 Found [http://railsjquery.local/comments/1]
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Update (0.3ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:15:14', `score` = 9 WHERE `id` = 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Rendering comments/update
+Completed in 14ms (View: 1, DB: 2) | 200 OK [http://railsjquery.local/comments/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:15:14) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (80.2ms)
+Completed in 105ms (View: 96, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:15:16) [GET]
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (4.0ms)
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:15:18) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"1"}
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 1) [0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:15:18) [PUT]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:15:18', `score` = 10 WHERE `id` = 1[0m
+  [4;36;1mSQL (8.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://railsjquery.local/comments
+Completed in 22ms (DB: 10) | 302 Found [http://railsjquery.local/comments/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:15:18) [GET]
+  [4;35;1mComment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:15:18', `score` = 11 WHERE `id` = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Rendering comments/update
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Completed in 73ms (View: 1, DB: 1) | 200 OK [http://railsjquery.local/comments/1]
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (4.2ms)
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2009-05-18 09:15:19) [DELETE]
+  Parameters: {"id"=>"1"}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Destroy (0.1ms)[0m   [0;1mDELETE FROM `comments` WHERE `id` = 1[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mCOMMIT[0m
+Rendering comments/destroy
+Completed in 19ms (View: 4, DB: 5) | 200 OK [http://railsjquery.local/comments/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:15:22) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:16:15) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2009-05-18 09:16:17) [GET]
+  Parameters: {"_"=>"1242634577328"}
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering comments/new
+Rendered comments/_form (3.5ms)
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://railsjquery.local/comments/new?_=1242634577328]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-05-18 09:16:21) [POST]
+  Parameters: {"comment"=>{"body"=>"new one"}, "authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8="}
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:16:21', 'new one', '2009-05-18 08:16:21', 0)[0m
+  [4;36;1mSQL (6.1ms)[0m   [0;1mCOMMIT[0m
+Rendering comments/create
+Rendered comments/_comment (1.8ms)
+Completed in 33ms (View: 15, DB: 9) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:16:23) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"2"}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:16:23', `score` = 1 WHERE `id` = 2[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://railsjquery.local/comments
+Completed in 17ms (DB: 5) | 302 Found [http://railsjquery.local/comments/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:16:23) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.8ms)
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:16:28) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"2"}
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:16:28', `score` = 2 WHERE `id` = 2[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:16:28) [PUT]
+  Parameters: {"id"=>"2"}
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;36;1mSQL (12.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://railsjquery.local/comments
+Completed in 25ms (DB: 14) | 302 Found [http://railsjquery.local/comments/2]
+  [4;35;1mComment Update (0.3ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:16:28', `score` = 3 WHERE `id` = 2[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCOMMIT[0m
+Rendering comments/update
+Completed in 18ms (View: 1, DB: 3) | 200 OK [http://railsjquery.local/comments/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:16:28) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (2.7ms)
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:16:30) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.9ms)
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:16:31) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"2"}
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:16:31) [PUT]
+  Parameters: {"id"=>"2"}
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:16:31', `score` = 4 WHERE `id` = 2[0m
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+Redirected to http://railsjquery.local/comments
+Completed in 15ms (DB: 4) | 302 Found [http://railsjquery.local/comments/2]
+  [4;36;1mComment Update (0.3ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:16:31', `score` = 5 WHERE `id` = 2[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Rendering comments/update
+Completed in 13ms (View: 1, DB: 2) | 200 OK [http://railsjquery.local/comments/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:16:31) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.9ms)
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:16:51) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (9.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (61.2ms)
+Completed in 74ms (View: 57, DB: 10) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:16:53) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"2"}
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-05-18 09:16:53) [GET]
+  Parameters: {"id"=>"2", "_"=>"1242634613048"}
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:16:53', `score` = 6 WHERE `id` = 2[0m
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, index, new, and update):
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (15.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://railsjquery.local/comments
+Completed in 29ms (DB: 17) | 302 Found [http://railsjquery.local/comments/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:16:53) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (4.0ms)
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:18:22) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (4.8ms)
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:18:24) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"2"}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:18:24', `score` = 7 WHERE `id` = 2[0m
+
+
+Processing CommentsController#2 (for 127.0.0.1 at 2009-05-18 09:18:24) [POST]
+  [4;35;1mSQL (10.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://railsjquery.local/comments
+Completed in 23ms (DB: 12) | 302 Found [http://railsjquery.local/comments/2]
+
+ActionController::UnknownAction (No action responded to 2. Actions: create, destroy, index, new, and update):
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:18:24) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (4.5ms)
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:18:28) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"2"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#2 (for 127.0.0.1 at 2009-05-18 09:18:28) [POST]
+  [4;36;1mComment Columns (10.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:18:28', `score` = 8 WHERE `id` = 2[0m
+  [4;36;1mSQL (4.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://railsjquery.local/comments
+Completed in 27ms (DB: 16) | 302 Found [http://railsjquery.local/comments/2]
+
+ActionController::UnknownAction (No action responded to 2. Actions: create, destroy, index, new, and update):
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:18:28) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.8ms)
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:18:29) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"2"}
+  [4;36;1mComment Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:18:29', `score` = 9 WHERE `id` = 2[0m
+
+
+Processing CommentsController#2 (for 127.0.0.1 at 2009-05-18 09:18:29) [POST]
+  [4;36;1mSQL (6.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://railsjquery.local/comments
+Completed in 19ms (DB: 8) | 302 Found [http://railsjquery.local/comments/2]
+
+ActionController::UnknownAction (No action responded to 2. Actions: create, destroy, index, new, and update):
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:18:29) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (4.0ms)
+Completed in 76ms (View: 6, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:18:30) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"2"}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+
+
+Processing CommentsController#2 (for 127.0.0.1 at 2009-05-18 09:18:30) [POST]
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:18:30', `score` = 10 WHERE `id` = 2[0m
+
+ActionController::UnknownAction (No action responded to 2. Actions: create, destroy, index, new, and update):
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (15.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://railsjquery.local/comments
+Completed in 29ms (DB: 17) | 302 Found [http://railsjquery.local/comments/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:18:30) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.9ms)
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:18:31) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"2"}
+  [4;36;1mComment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#2 (for 127.0.0.1 at 2009-05-18 09:18:31) [POST]
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:18:31', `score` = 11 WHERE `id` = 2[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://railsjquery.local/comments
+Completed in 16ms (DB: 4) | 302 Found [http://railsjquery.local/comments/2]
+
+ActionController::UnknownAction (No action responded to 2. Actions: create, destroy, index, new, and update):
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:18:31) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (4.4ms)
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:18:33) [PUT]
+  Parameters: {"authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8=", "id"=>"2"}
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:18:33', `score` = 12 WHERE `id` = 2[0m
+  [4;35;1mSQL (5.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://railsjquery.local/comments
+Completed in 18ms (DB: 7) | 302 Found [http://railsjquery.local/comments/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:18:33) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (2.8ms)
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://railsjquery.local/comments]
+
+
+Processing CommentsController#2 (for 127.0.0.1 at 2009-05-18 09:18:33) [POST]
+
+ActionController::UnknownAction (No action responded to 2. Actions: create, destroy, index, new, and update):
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:18:55) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:18:57) [PUT]
+  Parameters: {"id"=>"2"}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:18:57', `score` = 13 WHERE `id` = 2[0m
+  [4;35;1mSQL (6.1ms)[0m   [0mCOMMIT[0m
+Rendering comments/update
+Completed in 19ms (View: 1, DB: 8) | 200 OK [http://railsjquery.local/comments/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:18:59) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.6ms)
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:19:01) [PUT]
+  Parameters: {"id"=>"2"}
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:19:01', `score` = 14 WHERE `id` = 2[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCOMMIT[0m
+Rendering comments/update
+Completed in 16ms (View: 1, DB: 4) | 200 OK [http://railsjquery.local/comments/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:19:02) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:19:06) [PUT]
+  Parameters: {"id"=>"2"}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:19:06', `score` = 15 WHERE `id` = 2[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mCOMMIT[0m
+Rendering comments/update
+Completed in 14ms (View: 1, DB: 3) | 200 OK [http://railsjquery.local/comments/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:19:07) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.6ms)
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:21:04) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+ERROR: compiling _run_erb_app47views47comments47_comment46html46erb_locals_comment_comment_counter_object RAISED compile error
+/home/alpin/code/rails/railsjquery/app/views/comments/_comment.html.erb:5: syntax error, unexpected ')'
+).to_s); @output_buffer.concat ...
+ ^
+Function body:           def _run_erb_app47views47comments47_comment46html46erb_locals_comment_comment_counter_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];comment = local_assigns[:comment];comment_counter = local_assigns[:comment_counter];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id=\"comment\#{comment.id}\">\n"
+; @output_buffer.concat((
+    content_tag(:p,
+    comment.body,
+).to_s); @output_buffer.concat "\n<!-- We are accessing the update function so we use put as class -->\n<span id=\"score\">"
+
+; @output_buffer.concat(( comment.score ).to_s); @output_buffer.concat "</span><span> - "; @output_buffer.concat(( link_to 'Add one point!',comment_path(comment),:class => "put"  ).to_s); @output_buffer.concat "</span>\n<p> - "
+; @output_buffer.concat(( link_to '*Delete this comment',comment_path(comment),:method => :delete,:class => "delete"  ).to_s); @output_buffer.concat "</p>\n<p>"
+; @output_buffer.concat(( comment.created_at ).to_s); @output_buffer.concat "</p>\n<hr />\n</div>\n\n"
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/alpin/code/rails/railsjquery/app/views/comments/_comment.html.erb:16:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/partials.rb:221:in `render_partial_collection'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/partials.rb:216:in `map'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/partials.rb:216:in `render_partial_collection'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/partials.rb:195:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:262:in `render'
+/home/alpin/code/rails/railsjquery/app/helpers/comments_helper.rb:6:in `comments_display'
+/home/alpin/code/rails/railsjquery/app/views/comments/index.html.erb:3:in `_run_erb_app47views47comments47index46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:301:in `with_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:30:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/alpin/code/rails/railsjquery/app/controllers/comments_controller.rb:8:in `index'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/utils.rb:181:in `safe_fork'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/abstract_server.rb:154:in `start'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+/usr/lib/ruby/gems/1.8/gems/passenger-2.2.2/bin/passenger-spawn-server:61
+
+ActionView::TemplateError (compile error
+/home/alpin/code/rails/railsjquery/app/views/comments/_comment.html.erb:5: syntax error, unexpected ')'
+).to_s); @output_buffer.concat ...
+ ^) on line #5 of app/views/comments/_comment.html.erb:
+2: <%=
+3:     content_tag(:p,
+4:     comment.body,
+5: %>
+6: <!-- We are accessing the update function so we use put as class -->
+7: <span id="score"><%= comment.score %></span><span> - <%= link_to 'Add one point!',comment_path(comment),:class => "put"  %></span>
+8: <p> - <%= link_to '*Delete this comment',comment_path(comment),:method => :delete,:class => "delete"  %></p>
+
+    app/views/comments/_comment.html.erb:16:in `compile!'
+    app/helpers/comments_helper.rb:6:in `comments_display'
+    app/views/comments/index.html.erb:3
+    app/controllers/comments_controller.rb:8:in `index'
+    passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+    passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+    passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+    passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendered rescues/_trace (131.1ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:21:11) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (4.6ms)
+Completed in 17ms (View: 9, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:21:14) [PUT]
+  Parameters: {"id"=>"2"}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:21:14', `score` = 16 WHERE `id` = 2[0m
+  [4;35;1mSQL (6.5ms)[0m   [0mCOMMIT[0m
+Rendering comments/update
+Completed in 19ms (View: 1, DB: 8) | 200 OK [http://railsjquery.local/comments/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:21:16) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:22:11) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (4.6ms)
+Completed in 17ms (View: 9, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:22:14) [PUT]
+  Parameters: {"id"=>"2"}
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:22:14', `score` = 17 WHERE `id` = 2[0m
+  [4;36;1mSQL (9.1ms)[0m   [0;1mCOMMIT[0m
+Rendering comments/update
+Completed in 21ms (View: 1, DB: 11) | 200 OK [http://railsjquery.local/comments/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:22:18) [PUT]
+  Parameters: {"id"=>"2"}
+  [4;35;1mComment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Update (0.1ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:22:18', `score` = 18 WHERE `id` = 2[0m
+  [4;35;1mSQL (7.1ms)[0m   [0mCOMMIT[0m
+Rendering comments/update
+Completed in 16ms (View: 0, DB: 8) | 200 OK [http://railsjquery.local/comments/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2009-05-18 09:22:22) [DELETE]
+  Parameters: {"id"=>"2"}
+  [4;36;1mComment Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 2) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Destroy (0.1ms)[0m   [0mDELETE FROM `comments` WHERE `id` = 2[0m
+  [4;36;1mSQL (7.8ms)[0m   [0;1mCOMMIT[0m
+Rendering comments/destroy
+Completed in 16ms (View: 0, DB: 9) | 200 OK [http://railsjquery.local/comments/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:22:33) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2009-05-18 09:22:36) [GET]
+  Parameters: {"_"=>"1242634956208"}
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering comments/new
+Rendered comments/_form (2.8ms)
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://railsjquery.local/comments/new?_=1242634956208]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-05-18 09:22:39) [POST]
+  Parameters: {"comment"=>{"body"=>"new comment"}, "authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8="}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:22:39', 'new comment', '2009-05-18 08:22:39', 0)[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCOMMIT[0m
+Rendering comments/create
+Rendered comments/_comment (1.8ms)
+Completed in 18ms (View: 3, DB: 4) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:22:42) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.8ms)
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2009-05-18 09:22:43) [GET]
+  Parameters: {"_"=>"1242634963791"}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendering comments/new
+Rendered comments/_form (2.7ms)
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://railsjquery.local/comments/new?_=1242634963791]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-05-18 09:22:49) [POST]
+  Parameters: {"comment"=>{"body"=>"new one again"}, "authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8="}
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:22:49', 'new one again', '2009-05-18 08:22:49', 0)[0m
+  [4;35;1mSQL (7.9ms)[0m   [0mCOMMIT[0m
+Rendering comments/create
+Rendered comments/_comment (0.9ms)
+Completed in 22ms (View: 2, DB: 9) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-05-18 09:22:50) [GET]
+  Parameters: {"id"=>"4"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, index, new, and update):
+  passenger (2.2.2) lib/phusion_passenger/rack/request_handler.rb:81:in `process_request'
+  passenger (2.2.2) lib/phusion_passenger/abstract_request_handler.rb:203:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:340:in `start_request_handler'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:298:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/utils.rb:181:in `safe_fork'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:296:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:154:in `start'
+  passenger (2.2.2) lib/phusion_passenger/railz/application_spawner.rb:192:in `start'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:257:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:251:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:250:in `spawn_rails_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:153:in `spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/spawn_manager.rb:282:in `handle_spawn_application'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `__send__'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:337:in `main_loop'
+  passenger (2.2.2) lib/phusion_passenger/abstract_server.rb:187:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:22:54) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.8ms)
+Rendered comments/_comment (0.9ms)
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:22:56) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Rendered comments/_comment (0.8ms)
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:22:57) [PUT]
+  Parameters: {"id"=>"4"}
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 4) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:22:57', `score` = 1 WHERE `id` = 4[0m
+  [4;36;1mSQL (7.1ms)[0m   [0;1mCOMMIT[0m
+Rendering comments/update
+Completed in 80ms (View: 1, DB: 9) | 200 OK [http://railsjquery.local/comments/4]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:22:59) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (4.0ms)
+Rendered comments/_comment (0.9ms)
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:23:01) [PUT]
+  Parameters: {"id"=>"4"}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:23:01', `score` = 2 WHERE `id` = 4[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mCOMMIT[0m
+Rendering comments/update
+Completed in 18ms (View: 1, DB: 6) | 200 OK [http://railsjquery.local/comments/4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:23:30) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (4.8ms)
+Rendered comments/_comment (0.8ms)
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:23:32) [PUT]
+  Parameters: {"id"=>"4"}
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 4) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:23:32', `score` = 3 WHERE `id` = 4[0m
+  [4;36;1mSQL (7.6ms)[0m   [0;1mCOMMIT[0m
+Rendering comments/update
+Completed in 24ms (View: 4, DB: 9) | 200 OK [http://railsjquery.local/comments/4]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:23:33) [PUT]
+  Parameters: {"id"=>"3"}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 3) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:23:33', `score` = 1 WHERE `id` = 3[0m
+  [4;35;1mSQL (9.6ms)[0m   [0mCOMMIT[0m
+Rendering comments/update
+Completed in 22ms (View: 1, DB: 11) | 200 OK [http://railsjquery.local/comments/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-05-18 09:23:34) [PUT]
+  Parameters: {"id"=>"3"}
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:23:34', `score` = 2 WHERE `id` = 3[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCOMMIT[0m
+Rendering comments/update
+Completed in 14ms (View: 1, DB: 3) | 200 OK [http://railsjquery.local/comments/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:23:35) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Rendered comments/_comment (0.9ms)
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2009-05-18 09:23:38) [DELETE]
+  Parameters: {"id"=>"4"}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 4) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Destroy (0.1ms)[0m   [0;1mDELETE FROM `comments` WHERE `id` = 4[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCOMMIT[0m
+Rendering comments/destroy
+Completed in 16ms (View: 4, DB: 4) | 200 OK [http://railsjquery.local/comments/4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:24:10) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.6ms)
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2009-05-18 09:24:12) [GET]
+  Parameters: {"_"=>"1242635052316"}
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering comments/new
+Rendered comments/_form (2.0ms)
+Completed in 12ms (View: 3, DB: 1) | 200 OK [http://railsjquery.local/comments/new?_=1242635052316]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-05-18 09:24:13) [POST]
+  Parameters: {"comment"=>{"body"=>"sdf"}, "authenticity_token"=>"IBU7CjWDwf0pU56fbjHO8VALy3yj2lvceIZJ+lhK5K8="}
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:24:13', 'sdf', '2009-05-18 08:24:13', 0)[0m
+  [4;36;1mSQL (10.9ms)[0m   [0;1mCOMMIT[0m
+Rendering comments/create
+Rendered comments/_comment (1.7ms)
+Completed in 30ms (View: 7, DB: 12) | 200 OK [http://railsjquery.local/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2009-05-18 09:24:14) [DELETE]
+  Parameters: {"id"=>"5"}
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 5) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Destroy (0.2ms)[0m   [0;1mDELETE FROM `comments` WHERE `id` = 5[0m
+  [4;35;1mSQL (4.9ms)[0m   [0mCOMMIT[0m
+Rendering comments/destroy
+Completed in 16ms (View: 1, DB: 6) | 200 OK [http://railsjquery.local/comments/5]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-05-18 09:24:16) [GET]
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.8ms)
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://railsjquery.local/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (8.6ms)[0m   [0;1mDROP DATABASE IF EXISTS `railsjquery_test`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE DATABASE `railsjquery_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mCREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `body` text, `score` int(11) DEFAULT 0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM `schema_migrations`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090514111451')[0m

@@ -29,7 +29,7 @@ class CommentsControllerTest < ActionController::TestCase
         get :index
       end
       should "display comment" do
-        assert_select("p#comment#{@comment.id}","My created comment")
+        assert_select("#comment#{@comment.id}",/My created comment/)
       end
     end
 
@@ -132,7 +132,7 @@ class CommentsControllerTest < ActionController::TestCase
         assert_equal(1, assigns(:comment).score)
       end
       should "update the right comment" do
-        assert_match(%($('#comment#{@comment.id} span#score').html("#{assigns(:comment).score}")),@response.body)
+        assert_match(%($('#comment#{@comment.id} span.score').html("#{assigns(:comment).score}")),@response.body)
       end
     end
   end

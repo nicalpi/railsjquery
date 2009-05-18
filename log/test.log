@@ -34896,3 +34896,1830 @@ Processing CommentsController#update (for 0.0.0.0 at 2009-05-14 22:30:17) [PUT]
 Rendering comments/update
 Completed in 7ms (View: 1, DB: 3) | 200 OK [http://test.host/comments/183?comment=183]
   [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:24:44) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:24:44) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:24:44) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:24:44) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mComment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:24:44) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:24:44) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-18 08:24:44', 'My comment', '2009-05-18 08:24:44', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 9ms (DB: 1) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (5.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:24:44) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-18 08:24:44', 'My comment', '2009-05-18 08:24:44', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 3ms (DB: 6) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:24:44) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-18 08:24:44', 'My xhr comment', '2009-05-18 08:24:44', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:24:44) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-18 08:24:44', 'My xhr comment', '2009-05-18 08:24:44', NULL)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:24:44) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-18 08:24:44', 'My xhr comment', '2009-05-18 08:24:44', NULL)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:24:44) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `point`) VALUES('2009-05-18 08:24:44', 'My xhr comment', '2009-05-18 08:24:44', NULL)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:24:44) [GET]
+Rendering comments/new
+Rendered comments/_form (1.1ms)
+Completed in 2ms (View: 2, DB: 1) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:24:44) [GET]
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:24:44) [GET]
+Rendering comments/new
+Rendered comments/_form (0.5ms)
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:24:44) [GET]
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:24:44) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:24:44) [GET]
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.5ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:24:44) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:24:44) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:25:01) [GET]
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:25:01) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:25:01) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:25:01) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:01', 'My created comment', '2009-05-18 08:25:01', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:25:01) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (17.4ms)
+Completed in 20ms (View: 19, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (4.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:25:01) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 2ms (View: 1, DB: 4) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:25:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:01', 'My comment', '2009-05-18 08:25:01', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:25:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:01', 'My comment', '2009-05-18 08:25:01', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:25:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:01', 'My xhr comment', '2009-05-18 08:25:01', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (1.7ms)
+Completed in 12ms (View: 9, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:25:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:01', 'My xhr comment', '2009-05-18 08:25:01', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.9ms)
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:25:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:01', 'My xhr comment', '2009-05-18 08:25:01', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.9ms)
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:25:01) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:01', 'My xhr comment', '2009-05-18 08:25:01', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.9ms)
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:01', NULL, '2009-05-18 08:25:01', 0)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:25:01) [DELETE]
+  Parameters: {"id"=>#<Comment id: 8, body: nil, score: 0, created_at: "2009-05-18 08:25:01", updated_at: "2009-05-18 08:25:01">}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 8) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Destroy (0.1ms)[0m   [0mDELETE FROM `comments` WHERE `id` = 8[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/comments/8]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:01', NULL, '2009-05-18 08:25:01', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:25:01) [DELETE]
+  Parameters: {"id"=>#<Comment id: 9, body: nil, score: 0, created_at: "2009-05-18 08:25:01", updated_at: "2009-05-18 08:25:01">}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 9) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Destroy (0.1ms)[0m   [0mDELETE FROM `comments` WHERE `id` = 9[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/9]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:01', NULL, '2009-05-18 08:25:01', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:25:01) [DELETE]
+  Parameters: {"id"=>#<Comment id: 10, body: nil, score: 0, created_at: "2009-05-18 08:25:01", updated_at: "2009-05-18 08:25:01">}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 10) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Destroy (0.1ms)[0m   [0;1mDELETE FROM `comments` WHERE `id` = 10[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/10]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:01', NULL, '2009-05-18 08:25:01', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:25:01) [DELETE]
+  Parameters: {"id"=>#<Comment id: 11, body: nil, score: 0, created_at: "2009-05-18 08:25:01", updated_at: "2009-05-18 08:25:01">}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 11) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Destroy (0.1ms)[0m   [0;1mDELETE FROM `comments` WHERE `id` = 11[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/destroy
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/comments/11]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:01', NULL, '2009-05-18 08:25:01', 0)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:25:01) [DELETE]
+  Parameters: {"id"=>#<Comment id: 12, body: nil, score: 0, created_at: "2009-05-18 08:25:01", updated_at: "2009-05-18 08:25:01">}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 12) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Destroy (0.1ms)[0m   [0;1mDELETE FROM `comments` WHERE `id` = 12[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/destroy
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/comments/12]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:01) [GET]
+Rendering comments/new
+Rendered comments/_form (2.0ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:01) [GET]
+Rendering comments/new
+Rendered comments/_form (0.8ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:01) [GET]
+Rendering comments/new
+Rendered comments/_form (0.8ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:01) [GET]
+Rendering comments/new
+Rendered comments/_form (0.9ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:01) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.8ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:01) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.8ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:01) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.9ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:01) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.9ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:02', 'my comment', '2009-05-18 08:25:02', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:02) [PUT]
+  Parameters: {"comment"=>#<Comment id: 13, body: "my comment", score: 0, created_at: "2009-05-18 08:25:02", updated_at: "2009-05-18 08:25:02">, "id"=>"13"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 13) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:02', `score` = 1 WHERE `id` = 13[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/comments/13?comment=13]
+  [4;35;1mSQL (1.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:02', 'my comment', '2009-05-18 08:25:02', 0)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:02) [PUT]
+  Parameters: {"comment"=>#<Comment id: 14, body: "my comment", score: 0, created_at: "2009-05-18 08:25:02", updated_at: "2009-05-18 08:25:02">, "id"=>"14"}
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 14) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Update (0.1ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:02', `score` = 1 WHERE `id` = 14[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 2) | 302 Found [http://test.host/comments/14?comment=14]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:02', 'my comment', '2009-05-18 08:25:02', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:02) [PUT]
+  Parameters: {"comment"=>#<Comment id: 15, body: "my comment", score: 0, created_at: "2009-05-18 08:25:02", updated_at: "2009-05-18 08:25:02">, "id"=>"15"}
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 15) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Update (0.1ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:02', `score` = 1 WHERE `id` = 15[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/15?comment=15]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:02', 'my comment', '2009-05-18 08:25:02', 0)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:02) [PUT]
+  Parameters: {"comment"=>#<Comment id: 16, body: "my comment", score: 0, created_at: "2009-05-18 08:25:02", updated_at: "2009-05-18 08:25:02">, "id"=>"16"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 16) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:02', `score` = 1 WHERE `id` = 16[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/comments/16?comment=16]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:02', 'my comment', '2009-05-18 08:25:02', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:02) [PUT]
+  Parameters: {"comment"=>#<Comment id: 17, body: "my comment", score: 0, created_at: "2009-05-18 08:25:02", updated_at: "2009-05-18 08:25:02">, "id"=>"17"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 17) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Update (0.1ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:02', `score` = 1 WHERE `id` = 17[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/update
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://test.host/comments/17?comment=17]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:02', 'my comment', '2009-05-18 08:25:02', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:02) [PUT]
+  Parameters: {"comment"=>#<Comment id: 18, body: "my comment", score: 0, created_at: "2009-05-18 08:25:02", updated_at: "2009-05-18 08:25:02">, "id"=>"18"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 18) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Update (0.1ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:02', `score` = 1 WHERE `id` = 18[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/update
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/comments/18?comment=18]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:02', 'my comment', '2009-05-18 08:25:02', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:02) [PUT]
+  Parameters: {"comment"=>#<Comment id: 19, body: "my comment", score: 0, created_at: "2009-05-18 08:25:02", updated_at: "2009-05-18 08:25:02">, "id"=>"19"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 19) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:02', `score` = 1 WHERE `id` = 19[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/update
+Completed in 4ms (View: 0, DB: 1) | 200 OK [http://test.host/comments/19?comment=19]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:02', 'my comment', '2009-05-18 08:25:02', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:02) [PUT]
+  Parameters: {"comment"=>#<Comment id: 20, body: "my comment", score: 0, created_at: "2009-05-18 08:25:02", updated_at: "2009-05-18 08:25:02">, "id"=>"20"}
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 20) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Update (0.1ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:02', `score` = 1 WHERE `id` = 20[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/update
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/comments/20?comment=20]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:25:32) [GET]
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:25:32) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:25:32) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:25:32) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', 'My created comment', '2009-05-18 08:25:32', 0)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:25:32) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (18.1ms)
+Completed in 22ms (View: 21, DB: 2) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (3.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:25:32) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 2ms (View: 1, DB: 4) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:25:32) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', 'My comment', '2009-05-18 08:25:32', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:25:32) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', 'My comment', '2009-05-18 08:25:32', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:25:32) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', 'My xhr comment', '2009-05-18 08:25:32', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (1.2ms)
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:25:32) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', 'My xhr comment', '2009-05-18 08:25:32', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.6ms)
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:25:32) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', 'My xhr comment', '2009-05-18 08:25:32', 0)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.9ms)
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:25:32) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', 'My xhr comment', '2009-05-18 08:25:32', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.9ms)
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', NULL, '2009-05-18 08:25:32', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:25:32) [DELETE]
+  Parameters: {"id"=>#<Comment id: 28, body: nil, score: 0, created_at: "2009-05-18 08:25:32", updated_at: "2009-05-18 08:25:32">}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 28) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Destroy (0.2ms)[0m   [0mDELETE FROM `comments` WHERE `id` = 28[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/28]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', NULL, '2009-05-18 08:25:32', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:25:32) [DELETE]
+  Parameters: {"id"=>#<Comment id: 29, body: nil, score: 0, created_at: "2009-05-18 08:25:32", updated_at: "2009-05-18 08:25:32">}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 29) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Destroy (0.1ms)[0m   [0mDELETE FROM `comments` WHERE `id` = 29[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/29]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', NULL, '2009-05-18 08:25:32', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:25:32) [DELETE]
+  Parameters: {"id"=>#<Comment id: 30, body: nil, score: 0, created_at: "2009-05-18 08:25:32", updated_at: "2009-05-18 08:25:32">}
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 30) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Destroy (0.1ms)[0m   [0;1mDELETE FROM `comments` WHERE `id` = 30[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/30]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', NULL, '2009-05-18 08:25:32', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:25:32) [DELETE]
+  Parameters: {"id"=>#<Comment id: 31, body: nil, score: 0, created_at: "2009-05-18 08:25:32", updated_at: "2009-05-18 08:25:32">}
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 31) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Destroy (0.1ms)[0m   [0;1mDELETE FROM `comments` WHERE `id` = 31[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/destroy
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/comments/31]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', NULL, '2009-05-18 08:25:32', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:25:32) [DELETE]
+  Parameters: {"id"=>#<Comment id: 32, body: nil, score: 0, created_at: "2009-05-18 08:25:32", updated_at: "2009-05-18 08:25:32">}
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 32) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Destroy (0.1ms)[0m   [0;1mDELETE FROM `comments` WHERE `id` = 32[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/destroy
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/comments/32]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:32) [GET]
+Rendering comments/new
+Rendered comments/_form (1.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:32) [GET]
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:32) [GET]
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:32) [GET]
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:32) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:32) [GET]
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:32) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:32) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.6ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', 'my comment', '2009-05-18 08:25:32', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:32) [PUT]
+  Parameters: {"comment"=>#<Comment id: 33, body: "my comment", score: 0, created_at: "2009-05-18 08:25:32", updated_at: "2009-05-18 08:25:32">, "id"=>"33"}
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 33) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Update (0.1ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:32', `score` = 1 WHERE `id` = 33[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/33?comment=33]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', 'my comment', '2009-05-18 08:25:32', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:32) [PUT]
+  Parameters: {"comment"=>#<Comment id: 34, body: "my comment", score: 0, created_at: "2009-05-18 08:25:32", updated_at: "2009-05-18 08:25:32">, "id"=>"34"}
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 34) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Update (0.1ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:32', `score` = 1 WHERE `id` = 34[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/34?comment=34]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', 'my comment', '2009-05-18 08:25:32', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:32) [PUT]
+  Parameters: {"comment"=>#<Comment id: 35, body: "my comment", score: 0, created_at: "2009-05-18 08:25:32", updated_at: "2009-05-18 08:25:32">, "id"=>"35"}
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 35) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Update (0.1ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:32', `score` = 1 WHERE `id` = 35[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/35?comment=35]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', 'my comment', '2009-05-18 08:25:32', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:32) [PUT]
+  Parameters: {"comment"=>#<Comment id: 36, body: "my comment", score: 0, created_at: "2009-05-18 08:25:32", updated_at: "2009-05-18 08:25:32">, "id"=>"36"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 36) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Update (0.1ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:32', `score` = 1 WHERE `id` = 36[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/comments/36?comment=36]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', 'my comment', '2009-05-18 08:25:32', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:32) [PUT]
+  Parameters: {"comment"=>#<Comment id: 37, body: "my comment", score: 0, created_at: "2009-05-18 08:25:32", updated_at: "2009-05-18 08:25:32">, "id"=>"37"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 37) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:32', `score` = 1 WHERE `id` = 37[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/update
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://test.host/comments/37?comment=37]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', 'my comment', '2009-05-18 08:25:32', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:32) [PUT]
+  Parameters: {"comment"=>#<Comment id: 38, body: "my comment", score: 0, created_at: "2009-05-18 08:25:32", updated_at: "2009-05-18 08:25:32">, "id"=>"38"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 38) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:32', `score` = 1 WHERE `id` = 38[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/update
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/comments/38?comment=38]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', 'my comment', '2009-05-18 08:25:32', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:32) [PUT]
+  Parameters: {"comment"=>#<Comment id: 39, body: "my comment", score: 0, created_at: "2009-05-18 08:25:32", updated_at: "2009-05-18 08:25:32">, "id"=>"39"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 39) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Update (0.1ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:32', `score` = 1 WHERE `id` = 39[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/update
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://test.host/comments/39?comment=39]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:32', 'my comment', '2009-05-18 08:25:32', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:32) [PUT]
+  Parameters: {"comment"=>#<Comment id: 40, body: "my comment", score: 0, created_at: "2009-05-18 08:25:32", updated_at: "2009-05-18 08:25:32">, "id"=>"40"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 40) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Update (0.1ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:32', `score` = 1 WHERE `id` = 40[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/update
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/comments/40?comment=40]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:25:49) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:25:49) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:25:49) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:25:49) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', 'My created comment', '2009-05-18 08:25:49', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:25:49) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (18.0ms)
+Completed in 21ms (View: 20, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (3.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:25:49) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 2ms (View: 1, DB: 4) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:25:49) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', 'My comment', '2009-05-18 08:25:49', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:25:49) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', 'My comment', '2009-05-18 08:25:49', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 51ms (DB: 1) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:25:49) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', 'My xhr comment', '2009-05-18 08:25:49', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (1.7ms)
+Completed in 11ms (View: 8, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:25:49) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', 'My xhr comment', '2009-05-18 08:25:49', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.9ms)
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:25:49) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', 'My xhr comment', '2009-05-18 08:25:49', 0)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.9ms)
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:25:49) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', 'My xhr comment', '2009-05-18 08:25:49', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.9ms)
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', NULL, '2009-05-18 08:25:49', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:25:49) [DELETE]
+  Parameters: {"id"=>#<Comment id: 48, body: nil, score: 0, created_at: "2009-05-18 08:25:49", updated_at: "2009-05-18 08:25:49">}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 48) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Destroy (0.1ms)[0m   [0mDELETE FROM `comments` WHERE `id` = 48[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/48]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', NULL, '2009-05-18 08:25:49', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:25:49) [DELETE]
+  Parameters: {"id"=>#<Comment id: 49, body: nil, score: 0, created_at: "2009-05-18 08:25:49", updated_at: "2009-05-18 08:25:49">}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 49) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Destroy (0.1ms)[0m   [0mDELETE FROM `comments` WHERE `id` = 49[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/49]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', NULL, '2009-05-18 08:25:49', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:25:49) [DELETE]
+  Parameters: {"id"=>#<Comment id: 50, body: nil, score: 0, created_at: "2009-05-18 08:25:49", updated_at: "2009-05-18 08:25:49">}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 50) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Destroy (0.1ms)[0m   [0;1mDELETE FROM `comments` WHERE `id` = 50[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/50]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', NULL, '2009-05-18 08:25:49', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:25:49) [DELETE]
+  Parameters: {"id"=>#<Comment id: 51, body: nil, score: 0, created_at: "2009-05-18 08:25:49", updated_at: "2009-05-18 08:25:49">}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 51) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Destroy (0.1ms)[0m   [0;1mDELETE FROM `comments` WHERE `id` = 51[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/destroy
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/comments/51]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', NULL, '2009-05-18 08:25:49', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:25:49) [DELETE]
+  Parameters: {"id"=>#<Comment id: 52, body: nil, score: 0, created_at: "2009-05-18 08:25:49", updated_at: "2009-05-18 08:25:49">}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 52) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Destroy (0.1ms)[0m   [0;1mDELETE FROM `comments` WHERE `id` = 52[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/destroy
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/comments/52]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:49) [GET]
+Rendering comments/new
+Rendered comments/_form (1.6ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:49) [GET]
+Rendering comments/new
+Rendered comments/_form (0.8ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:49) [GET]
+Rendering comments/new
+Rendered comments/_form (0.8ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:49) [GET]
+Rendering comments/new
+Rendered comments/_form (0.9ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:49) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.8ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:49) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.8ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:49) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.8ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:25:49) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.8ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', 'my comment', '2009-05-18 08:25:49', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:49) [PUT]
+  Parameters: {"comment"=>#<Comment id: 53, body: "my comment", score: 0, created_at: "2009-05-18 08:25:49", updated_at: "2009-05-18 08:25:49">, "id"=>"53"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 53) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:49', `score` = 1 WHERE `id` = 53[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/comments/53?comment=53]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', 'my comment', '2009-05-18 08:25:49', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:49) [PUT]
+  Parameters: {"comment"=>#<Comment id: 54, body: "my comment", score: 0, created_at: "2009-05-18 08:25:49", updated_at: "2009-05-18 08:25:49">, "id"=>"54"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 54) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Update (0.1ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:49', `score` = 1 WHERE `id` = 54[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/comments/54?comment=54]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', 'my comment', '2009-05-18 08:25:49', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:49) [PUT]
+  Parameters: {"comment"=>#<Comment id: 55, body: "my comment", score: 0, created_at: "2009-05-18 08:25:49", updated_at: "2009-05-18 08:25:49">, "id"=>"55"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 55) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:49', `score` = 1 WHERE `id` = 55[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/comments/55?comment=55]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', 'my comment', '2009-05-18 08:25:49', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:49) [PUT]
+  Parameters: {"comment"=>#<Comment id: 56, body: "my comment", score: 0, created_at: "2009-05-18 08:25:49", updated_at: "2009-05-18 08:25:49">, "id"=>"56"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 56) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Update (0.1ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:49', `score` = 1 WHERE `id` = 56[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/comments/56?comment=56]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', 'my comment', '2009-05-18 08:25:49', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:49) [PUT]
+  Parameters: {"comment"=>#<Comment id: 57, body: "my comment", score: 0, created_at: "2009-05-18 08:25:49", updated_at: "2009-05-18 08:25:49">, "id"=>"57"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 57) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Update (0.1ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:49', `score` = 1 WHERE `id` = 57[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/update
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://test.host/comments/57?comment=57]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', 'my comment', '2009-05-18 08:25:49', 0)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:49) [PUT]
+  Parameters: {"comment"=>#<Comment id: 58, body: "my comment", score: 0, created_at: "2009-05-18 08:25:49", updated_at: "2009-05-18 08:25:49">, "id"=>"58"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 58) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:49', `score` = 1 WHERE `id` = 58[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/update
+Completed in 4ms (View: 0, DB: 1) | 200 OK [http://test.host/comments/58?comment=58]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', 'my comment', '2009-05-18 08:25:49', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:49) [PUT]
+  Parameters: {"comment"=>#<Comment id: 59, body: "my comment", score: 0, created_at: "2009-05-18 08:25:49", updated_at: "2009-05-18 08:25:49">, "id"=>"59"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 59) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:49', `score` = 1 WHERE `id` = 59[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/update
+Completed in 4ms (View: 0, DB: 1) | 200 OK [http://test.host/comments/59?comment=59]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:25:49', 'my comment', '2009-05-18 08:25:49', 0)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:25:49) [PUT]
+  Parameters: {"comment"=>#<Comment id: 60, body: "my comment", score: 0, created_at: "2009-05-18 08:25:49", updated_at: "2009-05-18 08:25:49">, "id"=>"60"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 60) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:25:49', `score` = 1 WHERE `id` = 60[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/update
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/comments/60?comment=60]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:26:24) [GET]
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:26:24) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:26:24) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:26:24) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/comments]
+  [4;35;1mComment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', 'My created comment', '2009-05-18 08:26:24', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:26:24) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Rendered comments/_comment (12.0ms)
+Completed in 14ms (View: 13, DB: 1) | 200 OK [http://test.host/comments]
+  [4;36;1mSQL (4.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#index (for 0.0.0.0 at 2009-05-18 09:26:24) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 2ms (View: 1, DB: 5) | 200 OK [http://test.host/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:26:24) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', 'My comment', '2009-05-18 08:26:24', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:26:24) [POST]
+  Parameters: {"comment"=>{"body"=>"My comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', 'My comment', '2009-05-18 08:26:24', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 52ms (DB: 1) | 302 Found [http://test.host/comments?comment%5Bbody%5D=My+comment]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:26:24) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', 'My xhr comment', '2009-05-18 08:26:24', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (1.7ms)
+Completed in 12ms (View: 8, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:26:24) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', 'My xhr comment', '2009-05-18 08:26:24', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.9ms)
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:26:24) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', 'My xhr comment', '2009-05-18 08:26:24', 0)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.9ms)
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#create (for 0.0.0.0 at 2009-05-18 09:26:24) [POST]
+  Parameters: {"comment"=>{"body"=>"My xhr comment"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', 'My xhr comment', '2009-05-18 08:26:24', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/create
+Rendered comments/_comment (0.9ms)
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://test.host/comments?comment%5Bbody%5D=My+xhr+comment]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', NULL, '2009-05-18 08:26:24', 0)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:26:24) [DELETE]
+  Parameters: {"id"=>#<Comment id: 68, body: nil, score: 0, created_at: "2009-05-18 08:26:24", updated_at: "2009-05-18 08:26:24">}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 68) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Destroy (0.2ms)[0m   [0mDELETE FROM `comments` WHERE `id` = 68[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/68]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', NULL, '2009-05-18 08:26:24', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:26:24) [DELETE]
+  Parameters: {"id"=>#<Comment id: 69, body: nil, score: 0, created_at: "2009-05-18 08:26:24", updated_at: "2009-05-18 08:26:24">}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 69) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Destroy (0.1ms)[0m   [0mDELETE FROM `comments` WHERE `id` = 69[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/69]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', NULL, '2009-05-18 08:26:24', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:26:24) [DELETE]
+  Parameters: {"id"=>#<Comment id: 70, body: nil, score: 0, created_at: "2009-05-18 08:26:24", updated_at: "2009-05-18 08:26:24">}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 70) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Destroy (0.1ms)[0m   [0;1mDELETE FROM `comments` WHERE `id` = 70[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/comments/70]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', NULL, '2009-05-18 08:26:24', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `comments` [0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:26:24) [DELETE]
+  Parameters: {"id"=>#<Comment id: 71, body: nil, score: 0, created_at: "2009-05-18 08:26:24", updated_at: "2009-05-18 08:26:24">}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 71) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Destroy (0.1ms)[0m   [0;1mDELETE FROM `comments` WHERE `id` = 71[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/destroy
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/comments/71]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `comments` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', NULL, '2009-05-18 08:26:24', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#destroy (for 0.0.0.0 at 2009-05-18 09:26:24) [DELETE]
+  Parameters: {"id"=>#<Comment id: 72, body: nil, score: 0, created_at: "2009-05-18 08:26:24", updated_at: "2009-05-18 08:26:24">}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 72) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Destroy (0.1ms)[0m   [0;1mDELETE FROM `comments` WHERE `id` = 72[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/destroy
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/comments/72]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:26:24) [GET]
+Rendering comments/new
+Rendered comments/_form (1.5ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:26:24) [GET]
+Rendering comments/new
+Rendered comments/_form (0.8ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:26:24) [GET]
+Rendering comments/new
+Rendered comments/_form (0.8ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:26:24) [GET]
+Rendering comments/new
+Rendered comments/_form (0.9ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:26:24) [GET]
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.9ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:26:24) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.8ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:26:24) [GET]
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.8ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing CommentsController#new (for 0.0.0.0 at 2009-05-18 09:26:24) [GET]
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM `comments` [0m
+Rendering template within layouts/application
+Rendering comments/new
+Rendered comments/_form (0.9ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', 'my comment', '2009-05-18 08:26:24', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:26:24) [PUT]
+  Parameters: {"comment"=>#<Comment id: 73, body: "my comment", score: 0, created_at: "2009-05-18 08:26:24", updated_at: "2009-05-18 08:26:24">, "id"=>"73"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 73) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:26:24', `score` = 1 WHERE `id` = 73[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/comments/73?comment=73]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', 'my comment', '2009-05-18 08:26:24', 0)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:26:24) [PUT]
+  Parameters: {"comment"=>#<Comment id: 74, body: "my comment", score: 0, created_at: "2009-05-18 08:26:24", updated_at: "2009-05-18 08:26:24">, "id"=>"74"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 74) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Update (0.1ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:26:24', `score` = 1 WHERE `id` = 74[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/comments/74?comment=74]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', 'my comment', '2009-05-18 08:26:24', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:26:24) [PUT]
+  Parameters: {"comment"=>#<Comment id: 75, body: "my comment", score: 0, created_at: "2009-05-18 08:26:24", updated_at: "2009-05-18 08:26:24">, "id"=>"75"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 75) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Update (0.5ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:26:24', `score` = 1 WHERE `id` = 75[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 4ms (DB: 2) | 302 Found [http://test.host/comments/75?comment=75]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', 'my comment', '2009-05-18 08:26:24', 0)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:26:24) [PUT]
+  Parameters: {"comment"=>#<Comment id: 76, body: "my comment", score: 0, created_at: "2009-05-18 08:26:24", updated_at: "2009-05-18 08:26:24">, "id"=>"76"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 76) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Update (0.1ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:26:24', `score` = 1 WHERE `id` = 76[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/comments
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/comments/76?comment=76]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.1ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', 'my comment', '2009-05-18 08:26:24', 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:26:24) [PUT]
+  Parameters: {"comment"=>#<Comment id: 77, body: "my comment", score: 0, created_at: "2009-05-18 08:26:24", updated_at: "2009-05-18 08:26:24">, "id"=>"77"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 77) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:26:24', `score` = 1 WHERE `id` = 77[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/update
+Completed in 4ms (View: 1, DB: 2) | 200 OK [http://test.host/comments/77?comment=77]
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', 'my comment', '2009-05-18 08:26:24', 0)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:26:24) [PUT]
+  Parameters: {"comment"=>#<Comment id: 78, body: "my comment", score: 0, created_at: "2009-05-18 08:26:24", updated_at: "2009-05-18 08:26:24">, "id"=>"78"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 78) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:26:24', `score` = 1 WHERE `id` = 78[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/update
+Completed in 4ms (View: 0, DB: 1) | 200 OK [http://test.host/comments/78?comment=78]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Create (0.2ms)[0m   [0mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', 'my comment', '2009-05-18 08:26:24', 0)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:26:24) [PUT]
+  Parameters: {"comment"=>#<Comment id: 79, body: "my comment", score: 0, created_at: "2009-05-18 08:26:24", updated_at: "2009-05-18 08:26:24">, "id"=>"79"}
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 79) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mComment Update (0.2ms)[0m   [0mUPDATE `comments` SET `updated_at` = '2009-05-18 08:26:24', `score` = 1 WHERE `id` = 79[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/update
+Completed in 5ms (View: 0, DB: 1) | 200 OK [http://test.host/comments/79?comment=79]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Create (0.1ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `score`) VALUES('2009-05-18 08:26:24', 'my comment', '2009-05-18 08:26:24', 0)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing CommentsController#update (for 0.0.0.0 at 2009-05-18 09:26:24) [PUT]
+  Parameters: {"comment"=>#<Comment id: 80, body: "my comment", score: 0, created_at: "2009-05-18 08:26:24", updated_at: "2009-05-18 08:26:24">, "id"=>"80"}
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 80) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mComment Update (0.2ms)[0m   [0;1mUPDATE `comments` SET `updated_at` = '2009-05-18 08:26:24', `score` = 1 WHERE `id` = 80[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Rendering comments/update
+Completed in 4ms (View: 0, DB: 1) | 200 OK [http://test.host/comments/80?comment=80]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m

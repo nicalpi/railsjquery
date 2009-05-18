@@ -4,4 +4,6 @@ $(".comments h3").hide();
 $(".newComment form").hide();
 //Display the new comment
 $(".comments").append("<%= escape_javascript(render :partial => @comment) %>");
+//Ajaxify the new links
+ajaxLinks();
 
