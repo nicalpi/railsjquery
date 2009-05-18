@@ -90,11 +90,7 @@ class CommentsControllerTest < ActionController::TestCase
         end
           should_change "Comment.count", :by => 1
 
-          should "hide the message No comments ..." do
-            assert_match(%($(".comments h3").hide()),@response.body)
-          end
-
-          should "hide the form comment" do
+          should "Display the new comment link" do
             assert_match(/new comment/,@response.body)
           end
 
