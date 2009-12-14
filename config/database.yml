@@ -21,7 +21,7 @@ development:
   database: railsjquery_development
   pool: 5
   username: root
-  password: a5v4ggu6
+  password: 
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -34,6 +34,6 @@ test:
   database: railsjquery_test
   pool: 5
   username: root
-  password: a5v4ggu6
+  password: 
   socket: /var/run/mysqld/mysqld.sock
 
